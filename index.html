@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aung Ko Myat | DevOps Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-bg: #F5F5F5;
+            --text-color: #333333;
+            --accent-color: #6B8EAD;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background: white;
+            position: sticky;
+            top: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
+        nav a {
+            margin-left: 1.5rem;
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        /* Fade-in animation */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.8s ease forwards;
+        }
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero img {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-bottom: 1rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background: #587a90;
+        }
+
+        /* Section Titles */
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        /* Projects Section */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Experience Section */
+        .experience-item {
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+        }
+
+        .experience-item h4 {
+            margin: 0 0 0.3rem 0;
+            color: var(--accent-color);
+        }
+
+        .experience-item small {
+            color: #777;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            background: white;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Aung Ko Myat</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero fade-in" id="about">
+    <img src="viber_image_2025-08-12_23-49-55-129.jpg" alt="Aung Ko Myat Photo">
+    <h2>Hi, I'm Aung Ko Myat</h2>
+    <p>DevOps Engineer with 3+ years of IT infrastructure, cloud services, and automation experience. Skilled in AWS, OCI, Docker, and CI/CD pipelines.</p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<!-- Projects Section -->
+<div class="container fade-in" id="projects">
+    <h3 class="section-title">Projects</h3>
+    <div class="projects">
+        <div class="card">
+            <h4>IBM Cloud App Deployment</h4>
+            <p>Deployed an application using IBM Code Engine on IBM Cloud.</p>
+        </div>
+        <div class="card">
+            <h4>Product Price Comparison App</h4>
+            <p>Python & Node.js-based application comparing product prices.</p>
+        </div>
+        <div class="card">
+            <h4>Robotshop Monitoring</h4>
+            <p>Monitored Robotshop Application using Instana for performance insights.</p>
+        </div>
+        <div class="card">
+            <h4>OpenShift Guestbook App</h4>
+            <p>Deployed Guestbook App from the OpenShift Internal Registry.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Experience Section -->
+<div class="container fade-in" id="experience">
+    <h3 class="section-title">Work Experience</h3>
+    <div class="experience-item">
+        <h4>IT Officer <small>Strong Source Holdings | Jul 2024 – May 2025</small></h4>
+        <p>Managed Oracle Cloud Infrastructure, company servers, and network devices. Maintained Active Directory, coordinated IT procurement, and provided end-user training.</p>
+    </div>
+    <div class="experience-item">
+        <h4>Senior Operation Engineer <small>Code2LAB | Jun 2022 – Jul 2024</small></h4>
+        <p>Deployed Docker containers, managed AWS services, and led POS system onboarding. Coordinated system configurations and trained users.</p>
+    </div>
+    <div class="experience-item">
+        <h4>Operation Engineer <small>Code2LAB | Jul 2021 – Jul 2022</small></h4>
+        <p>Provided technical support, configured networks, and conducted preventive maintenance to minimize downtime.</p>
+    </div>
+    <div class="experience-item">
+        <h4>Junior Customer Service <small>Code2LAB | Jul 2020 – Jul 2021</small></h4>
+        <p>Delivered technical support for software, hardware, and connectivity issues, ensuring SLA compliance.</p>
+    </div>
+    <div class="experience-item">
+        <h4>Junior Sale <small>Code2LAB | Feb 2020 – Jul 2020</small></h4>
+        <p>Consulted clients on IT infrastructure and POS solutions, managed sales, and negotiated contracts.</p>
+    </div>
+</div>
+
+<!-- Resume Section -->
+<div class="container fade-in" id="resume">
+    <h3 class="section-title">Resume</h3>
+    <p style="text-align:center;">You can view or download my full resume here:</p>
+    <p style="text-align:center;">
+        <a href="Aung%20Ko%20Myat%20Resume%20v2.pdf" class="btn" target="_blank">View Resume</a>
+    </p>
+</div>
+
+<!-- Footer -->
+<footer id="contact">
+    <p>📧 aungkomyat.lucas@gmail.com | 📍 Chiang Mai, Thailand</p>
+    <p><a href="https://www.linkedin.com/in/aung-ko-myat-835405144" target="_blank">LinkedIn</a></p>
+</footer>
+
+<script>
+    // Animate fade-in on scroll
+    const faders = document.querySelectorAll('.fade-in');
+    const appearOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+    const appearOnScroll = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationDelay = "0.2s";
+                entry.target.classList.add('appear');
+                entry.target.style.opacity = 1;
+                observer.unobserve(entry.target);
+            }
+        });
+    }, appearOptions);
+
+    faders.forEach(fader => {
+        appearOnScroll.observe(fader);
+    });
+</script>
+
+</body>
+</html>
